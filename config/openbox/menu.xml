@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+    <menu id="apps-accessories-menu" label="Accessories">
+        <separator label="Accessories" />
+        <item label="Wallpapers">
+            <action name="Execute">
+                <command>nitrogen</command>
+                <startupnotify>
+                    <enabled>yes</enabled>
+                </startupnotify>
+            </action>
+        </item>
+    </menu>
+    <menu id="apps-editors-menu" label="Editors">
+        <separator label="Editors" />
+        <item label="Visual Studio Code">
+            <action name="Execute">
+                <command>code</command>
+                <startupnotify>
+                    <enabled>yes</enabled>
+                    <wmclass>Code</wmclass>
+                </startupnotify>
+            </action>
+        </item>
+        <item label="Geany">
+            <action name="Execute">
+                <command>geany</command>
+                <startupnotify>
+                    <enabled>yes</enabled>
+                    <wmclass>Code</wmclass>
+                </startupnotify>
+            </action>
+        </item>
+    </menu>
+    <menu id="apps-term-menu" label="Terminals">
+        <separator label="Terminals" />
+        <item label="Rxvt Unicode">
+            <action name="Execute">
+                <command>urxvt</command>
+            </action>
+        </item>
+        <item label="Kitty">
+            <action name="Execute">
+                <command>kitty</command>
+            </action>
+        </item>
+    </menu>
+    <menu id="apps-net-menu" label="Internet">
+        <separator label="Internet" />
+        <item label="Firefox">
+            <action name="Execute">
+                <command>firefox</command>
+                <startupnotify>
+                    <enabled>yes</enabled>
+                    <wmclass>Firefox</wmclass>
+                </startupnotify>
+            </action>
+        </item>
+        <item label="Qutebrowser">
+            <action name="Execute">
+                <command>qutebrowser</command>
+                <startupnotify>
+                    <enabled>yes</enabled>
+                    <wmclass>Qutebrowser</wmclass>
+                </startupnotify>
+            </action>
+        </item>
+    </menu>
+    <menu id="apps-fileman-menu" label="File Manager">
+        <separator label="File Manager" />
+        <item label="Thunar">
+            <action name="Execute">
+                <command>Thunar</command>
+                <startupnotify>
+                    <enabled>yes</enabled>
+                </startupnotify>
+            </action>
+        </item>
+    </menu>
+
+    <menu id="system-menu" label="System">
+        <separator label="System" />
+        <item label="Openbox Configuration Manager">
+            <action name="Execute">
+                <command>obconf</command>
+                <startupnotify>
+                    <enabled>yes</enabled>
+                </startupnotify>
+            </action>
+        </item>
+        <item label="Reconfigure Openbox">
+            <action name="Reconfigure" />
+        </item>
+        <item label="Tint2 Settings">
+            <action name="Execute">
+                <command>tint2conf</command>
+                <startupnotify>
+                    <enabled>yes</enabled>
+                </startupnotify>
+            </action>
+        </item>
+    </menu>
+    <menu id="root-menu" label="Openbox 3">
+        <menu id="apps-accessories-menu" icon="/home/lauri/.icons/aether/light/small/accessories-menu.png"/>
+        <menu id="apps-editors-menu" icon="/home/lauri/.icons/aether/light/small/editors-menu.png"/>
+        <menu id="apps-net-menu" icon="/home/lauri/.icons/aether/light/small/internet-menu.png"/>
+        <menu id="apps-term-menu" icon="/home/lauri/.icons/aether/light/small/terminal-menu.png"/>
+        <menu id="apps-fileman-menu" icon="/home/lauri/.icons/aether/light/small/filemanager-menu.png"/>
+        <menu id="scripts-menu" icon="/home/lauri/.icons/aether/light/small/scripts-menu.png"/>
+        <separator/>
+        <menu id="system-menu" icon="/home/lauri/.icons/aether/light/small/system-menu.png"/>
+        <item label="Log Out" icon="/home/lauri/.icons/aether/light/small/logout.png">
+            <action name="Exit">
+                <prompt>yes</prompt>
+            </action>
+        </item>
+    </menu>
+</openbox_menu>
